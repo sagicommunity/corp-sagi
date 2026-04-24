@@ -27,37 +27,37 @@ const GREEN_DARK = '#1E9E5A';
 const FEATURES = [
   { icon: <Smartphone size={17} />, label: 'Доступ к платформе' },
   { icon: <CreditCard size={17} />, label: 'Apple Wallet карта' },
-  { icon: <Store size={17} />, label: 'Каталог скидок и предложений' },
-  { icon: <Shield size={17} />, label: 'Карта лояльности (QR ID)' },
-  { icon: <Bell size={17} />, label: 'Лента событий и новостей' },
+  { icon: <Store size={17} />, label: 'Каталог корпоративных привилегий' },
+  { icon: <Shield size={17} />, label: 'Карта участника (QR ID)' },
+  { icon: <Bell size={17} />, label: 'Лента событий компании' },
   { icon: <BarChart3 size={17} />, label: 'Аналитика использования' },
   { icon: <RefreshCw size={17} />, label: 'Управление контентом' },
-  { icon: <Briefcase size={17} />, label: 'Личный кабинет бизнеса' },
+  { icon: <Briefcase size={17} />, label: 'Личный кабинет HR / Маркетинга' },
   { icon: <Headphones size={17} />, label: 'Техническая поддержка' },
   { icon: <Clock size={17} />, label: 'Контроль сроков действия' },
   { icon: <GraduationCap size={17} />, label: 'Онбординг и обучение' },
-  { icon: <Users size={17} />, label: 'Менеджер по работе с бизнесами' },
+  { icon: <Users size={17} />, label: 'Персональный менеджер по партнёрам' },
 ];
 
 const FEATURE_GROUPS = [
   {
-    label: 'Для резидента',
+    label: 'Для участника',
     color: 'bg-[#EDFAF3] text-[#1E9E5A]',
     items: [
       { icon: <CreditCard size={15} />, label: 'Apple Wallet карта' },
-      { icon: <Shield size={15} />, label: 'Карта лояльности (QR ID)' },
-      { icon: <Store size={15} />, label: 'Каталог скидок и предложений' },
-      { icon: <Bell size={15} />, label: 'Лента событий и новостей' },
+      { icon: <Shield size={15} />, label: 'Карта участника (QR ID)' },
+      { icon: <Store size={15} />, label: 'Каталог корпоративных привилегий' },
+      { icon: <Bell size={15} />, label: 'Лента событий компании' },
     ],
   },
   {
-    label: 'Для администратора',
+    label: 'Для HR / Маркетинга',
     color: 'bg-[#EEF2FF] text-[#4338CA]',
     items: [
       { icon: <BarChart3 size={15} />, label: 'Аналитика использования' },
       { icon: <RefreshCw size={15} />, label: 'Управление контентом' },
       { icon: <Clock size={15} />, label: 'Контроль сроков действия' },
-      { icon: <Briefcase size={15} />, label: 'Личный кабинет бизнеса' },
+      { icon: <Briefcase size={15} />, label: 'Личный кабинет' },
     ],
   },
   {
@@ -66,7 +66,7 @@ const FEATURE_GROUPS = [
     items: [
       { icon: <Headphones size={15} />, label: 'Техническая поддержка' },
       { icon: <GraduationCap size={15} />, label: 'Онбординг и обучение' },
-      { icon: <Users size={15} />, label: 'Менеджер по работе с бизнесами' },
+      { icon: <Users size={15} />, label: 'Персональный менеджер' },
       { icon: <Smartphone size={15} />, label: 'Доступ к платформе' },
     ],
   },
@@ -101,42 +101,42 @@ function FeatureGroupList() {
 function PainBlock() {
   const groups = [
     {
-      label: 'AIFC Expat Centre',
+      label: 'Компания',
       icon: <Building2 size={20} />,
       color: '#4338CA',
       bg: '#EEF2FF',
       border: '#C7D2FE',
       items: [
-        'Сложно оперативно обновлять каталог привилегий для всех резидентов одновременно',
-        'Контроль сроков действия членских карт требует ручной проверки и времени команды',
-        'Трудно получить чёткую картину того, какими привилегиями резиденты пользуются чаще всего',
-        'Операционная нагрузка на администраторов растёт вместе с базой участников',
+        'Сложно централизованно управлять льготами для большого числа сотрудников или клиентов',
+        'Нет прозрачной аналитики: непонятно, какие привилегии реально используются и насколько они ценятся',
+        'Высокая текучестьпрограмма лояльности есть, но без цифрового доступа её никто не замечает',
+        'Операционная нагрузка на HR и маркетинг растёт вместе с базой участников',
       ],
     },
     {
-      label: 'Резидент',
+      label: 'Участник',
       icon: <CircleUser size={20} />,
       color: '#2ABB6F',
       bg: '#EDFAF3',
       border: '#B6EDD2',
       items: [
-        'Чтобы узнать о привилегиях, нужно искать письмо в почте, писать менеджеру или листать старые документы - слишком много шагов',
-        'Нет единого места, где можно быстро показать свой статус резидента при посещении партнёра',
-        'Актуальный список партнёров и условий не всегда под рукой - непонятно, куда идти и что предъявить',
-        'Ценность членства не ощущается в повседневной жизни, если нет удобного цифрового доступа',
+        'Информация о льготах разбросана по почте, буклетам и чатамслишком много шагов, чтобы что-то найти',
+        'Нет единого места для быстрого доступа к статусу участника и актуальным привилегиям',
+        'Список партнёров и условий не всегда под рукойнепонятно, куда идти и что предъявить',
+        'Ценность программы не ощущается в повседневной жизни без удобного цифрового доступа',
       ],
     },
     {
-      label: 'Бизнес',
+      label: 'Партнёр',
       icon: <ShoppingBag size={20} />,
       color: '#C2410C',
       bg: '#FFF7ED',
       border: '#FED7AA',
       items: [
-        'Нет простого способа проверить, является ли посетитель действующим резидентом AIFC Expat Centre',
+        'Нет простого способа верифицировать участника корпоративной программы при визите',
         'Сложно оценить реальный поток клиентов, пришедших именно благодаря партнёрству',
-        'Обновление условий предложения требует координации с несколькими сторонами',
-        'Не хватает данных, чтобы понять насколько сотрудничество с AIFC Expat Centre приносит результат',
+        'Обновление условий предложения требует координации с HR и несколькими сторонами',
+        'Не хватает данных, чтобы понять, насколько партнёрство приносит измеримый результат',
       ],
     },
   ];
@@ -149,7 +149,7 @@ function PainBlock() {
             Контекст
           </span>
           <h2 className="text-4xl font-black text-[#111827] mb-4">
-            Sagi Community -<br />
+            Sagi Community:<br />
             <span className="green-text">решение для всех сторон</span>
           </h2>
           <p className="text-[#6B7280] text-lg max-w-xl mx-auto">
@@ -238,7 +238,7 @@ export function SagiLanding() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <span className="text-[22px] font-black tracking-tight text-[#111827]">sagi</span>
-            <span className="text-xs font-semibold text-[#2ABB6F] border border-[#B6EDD2] bg-[#EDFAF3] rounded-full px-2.5 py-0.5 ml-1">Community · AIFC Expat Centre</span>
+            <span className="text-xs font-semibold text-[#2ABB6F] border border-[#B6EDD2] bg-[#EDFAF3] rounded-full px-2.5 py-0.5 ml-1">Корпоративная лояльность</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             {[['Возможности','#Возможности'],['Для бизнеса','#Бизнес'],['Тарифы','#Тарифы']].map(([l,h]) => (
@@ -258,16 +258,16 @@ export function SagiLanding() {
           <div className="flex-1 text-center lg:text-left">
             <span className="badge-green inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold mb-7">
               <Zap size={11} />
-              Цифровая платформа лояльности для AIFC Expat Centre
+              Цифровая платформа корпоративной лояльности
             </span>
 
             <h1 className="text-5xl lg:text-[3.6rem] font-black leading-[1.08] tracking-tight mb-6 text-[#111827]">
-              Корпоративная платформа лояльности<br />
-              <span className="green-text">AIFC Expat Centre</span>
+              Лояльность сотрудников<br />
+              <span className="green-text">и клиентов автоматически</span>
             </h1>
 
             <p className="text-lg text-[#6B7280] max-w-xl mx-auto lg:mx-0 leading-relaxed mb-10">
-              Цифровая платформа лояльности для резидентов<br />AIFC Expat Centre.<br />Предложения, аналитика и сообщество - в одном продукте.
+              Запустите программу корпоративных привилегий за несколько дней. Всё управление в одном дашборде.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-14">
@@ -279,7 +279,7 @@ export function SagiLanding() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-x-10 gap-y-4">
               {[
                 { v: '12', l: 'функций в одной подписке' },
-                { v: '$20', l: 'в месяц за резидента' },
+                { v: '$20', l: 'в месяц за участника' },
                 { v: '30%', l: 'скидка при оплате за год' },
               ].map(s => (
                 <div key={s.l} className="text-center lg:text-left">
@@ -302,7 +302,7 @@ export function SagiLanding() {
                 <div className="absolute -top-12 -right-12 w-52 h-52 rounded-full bg-white/10" />
                 <div className="absolute -bottom-14 -left-12 w-44 h-44 rounded-full bg-white/10" />
                 <div className="relative">
-                  <div className="text-[11px] text-white/60 font-semibold tracking-[0.15em] uppercase mb-1">AIFC Expat Centre</div>
+                  <div className="text-[11px] text-white/60 font-semibold tracking-[0.15em] uppercase mb-1">Corporate Member</div>
                   <div className="text-white font-black text-[38px] tracking-tight mb-10">Premium</div>
                   <div className="mb-10">
                     <div className="text-[10px] text-white/50 uppercase tracking-widest mb-1">Cardholder</div>
@@ -415,16 +415,16 @@ export function SagiLanding() {
             </span>
             <h2 className="text-4xl font-black text-[#111827] mb-4">Как это выглядит<br />в реальном использовании</h2>
             <p className="text-[#6B7280] text-lg max-w-xl mx-auto">
-              Три ключевых экрана: профиль резидента, лента сообщества и каталог предложений.
+              Три ключевых экрана: профиль участника, лента компании и каталог привилегий.
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row items-end justify-center gap-8 lg:gap-12">
 
             {[
-              { src: '/profile.png', label: 'Профиль резидента', sub: 'Карта лояльности + QR-код', offset: 'md:mb-10', objPos: 'calc(20% - 9.5px) -1px' },
-              { src: '/news.png', label: 'Лента сообщества', sub: 'Предложения и мои сообщества', offset: '', objPos: 'calc(20% - 6.5px) -2px' },
-              { src: '/offers.png', label: 'Каталог предложений', sub: 'Категории и партнёры AIFC Expat Centre', offset: 'md:mb-10', objPos: 'calc(20% - 7px) -2.5px' },
+              { src: '/profile.png', label: 'Профиль участника', sub: 'Карта лояльности + QR-код', offset: 'md:mb-10', objPos: 'calc(20% - 9.5px) -1px' },
+              { src: '/news.png', label: 'Лента компании', sub: 'Новости и предложения', offset: '', objPos: 'calc(20% - 6.5px) -2px' },
+              { src: '/offers.png', label: 'Каталог привилегий', sub: 'Категории и партнёры программы', offset: 'md:mb-10', objPos: 'calc(20% - 7px) -2.5px' },
             ].map(({ src, label, sub, offset, objPos }) => (
               <div key={src} className={`flex flex-col items-center gap-5 ${offset}`}>
                 <div className="relative" style={{ width: 220 }}>
@@ -478,13 +478,13 @@ export function SagiLanding() {
             </span>
             <h2 className="text-4xl font-black text-[#111827] mb-4">12 возможностей<br />в одной подписке</h2>
             <p className="text-[#6B7280] text-lg max-w-xl mx-auto">
-              Каждый инструмент разработан под задачи клуба лояльности AIFC Expat Centre
+              Каждый инструмент создан для полноценной корпоративной программы лояльности
             </p>
           </div>
 
           {/* 11 features grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5 mb-5">
-            {FEATURES.filter(f => f.label !== 'Менеджер по работе с бизнесами' && f.label !== 'Apple Wallet карта' && f.label !== 'Контроль сроков действия').map((f, i) => (
+            {FEATURES.filter(f => f.label !== 'Персональный менеджер по партнёрам' && f.label !== 'Apple Wallet карта' && f.label !== 'Контроль сроков действия').map((f, i) => (
               <div key={i} className="card-border card-lift flex items-center gap-4 p-4 rounded-2xl bg-white hover:bg-[#FAFFFE] transition-colors group">
                 <div className="icon-green w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0">
                   {f.icon}
@@ -514,7 +514,7 @@ export function SagiLanding() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-[#374151]">Контроль сроков действия</div>
-                <div className="text-xs text-[#9CA3AF] mt-0.5">Карта автоматически деактивируется по окончании членства - доступ к скидкам сохраняется только у активных участников</div>
+                <div className="text-xs text-[#9CA3AF] mt-0.5">Карта автоматически деактивируется по истечении периода. Доступ к привилегиям сохраняется только у активных участников программы</div>
               </div>
             </div>
           </div>
@@ -526,13 +526,13 @@ export function SagiLanding() {
             </div>
             <div className="flex-1">
               <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: GREEN }}>Персональный менеджер</div>
-              <div className="text-base font-black text-[#111827] mb-1.5">Менеджер по работе с бизнесами</div>
+              <div className="text-base font-black text-[#111827] mb-1.5">Менеджер по работе с партнёрами</div>
               <p className="text-sm text-[#6B7280] leading-relaxed">
-                Выделенный менеджер Sagi самостоятельно ведёт переговоры с партнёрами, договаривается об условиях и наполняет каталог скидок актуальными предложениями - вам не нужно тратить на это время.
+                Выделенный менеджер Sagi самостоятельно ведёт переговоры с партнёрами, договаривается об условиях и наполняет каталог привилегий актуальными предложениямивашей команде не нужно тратить на это время.
               </p>
             </div>
             <div className="flex flex-col gap-2 flex-shrink-0">
-              {['Переговоры с бизнесами', 'Наполнение каталога', 'Контроль условий'].map(t => (
+              {['Переговоры с партнёрами', 'Наполнение каталога', 'Контроль условий'].map(t => (
                 <div key={t} className="flex items-center gap-2 text-xs font-semibold" style={{ color: GREEN_DARK }}>
                   <CheckCircle size={13} style={{ color: GREEN }} />
                   {t}
@@ -568,16 +568,16 @@ export function SagiLanding() {
                   <Shield size={18} />
                 </div>
                 <div>
-                  <div className="text-[11px] text-[#9CA3AF] uppercase tracking-wider font-semibold">Для администратора AIFC Expat Centre</div>
+                  <div className="text-[11px] text-[#9CA3AF] uppercase tracking-wider font-semibold">Для HR / Маркетинга</div>
                   <h3 className="text-xl font-black text-[#111827]">Панель управления</h3>
                 </div>
               </div>
               <div className="space-y-3">
                 {[
-                  { icon: <Clock size={15} />, t: 'Контроль сроков действия', d: 'Автоблокировка карт при истечении периода. Push-уведомления о продлении.' },
-                  { icon: <RefreshCw size={15} />, t: 'Управление контентом', d: 'Мгновенное обновление предложений, партнёров и условий без перепечатки.' },
-                  { icon: <BarChart3 size={15} />, t: 'Аналитика предложений', d: 'Статистика использования: какие категории востребованы и у кого.' },
-                  { icon: <Users size={15} />, t: 'База участников', d: 'Управление резидентами, история продлений, статусы карт в реальном времени.' },
+                  { icon: <Clock size={15} />, t: 'Контроль сроков действия', d: 'Автоблокировка карт по истечении периода. Push-уведомления о продлении.' },
+                  { icon: <RefreshCw size={15} />, t: 'Управление контентом', d: 'Мгновенное обновление предложений, партнёров и условий без ручного труда.' },
+                  { icon: <BarChart3 size={15} />, t: 'Аналитика использования', d: 'Статистика по льготам: какие категории востребованы и у каких групп участников.' },
+                  { icon: <Users size={15} />, t: 'База участников', d: 'Управление сотрудниками и клиентами, история продлений, статусы карт в реальном времени.' },
                 ].map(item => (
                   <div key={item.t} className="card-border card-lift flex gap-4 p-4 rounded-2xl bg-white">
                     <div className="icon-green w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">{item.icon}</div>
@@ -598,14 +598,14 @@ export function SagiLanding() {
                 </div>
                 <div>
                   <div className="text-[11px] text-[#9CA3AF] uppercase tracking-wider font-semibold">Для партнёров</div>
-                  <h3 className="text-xl font-black text-[#111827]">Кабинет бизнеса</h3>
+                  <h3 className="text-xl font-black text-[#111827]">Кабинет партнёра</h3>
                 </div>
               </div>
               <div className="space-y-3">
                 {[
                   { icon: <Smartphone size={15} />, t: 'Сканирование QR-карт', d: 'Мгновенная верификация участника при посещении без пластиковых карт.' },
                   { icon: <RefreshCw size={15} />, t: 'Управление предложениями', d: 'Создание и редактирование скидок, акций и эксклюзивных условий.' },
-                  { icon: <BarChart3 size={15} />, t: 'Статистика визитов', d: 'Измеримый поток клиентов из AIFC Expat Centre, данные о проверках карт.' },
+                  { icon: <BarChart3 size={15} />, t: 'Статистика визитов', d: 'Измеримый поток клиентов из корпоративной программы, данные о сканированиях карт.' },
                   { icon: <Users size={15} />, t: 'Персональный менеджер', d: 'Выделенный менеджер Sagi сопровождает партнёра на всех этапах.' },
                 ].map(item => (
                   <div key={item.t} className="card-border card-lift flex gap-4 p-4 rounded-2xl bg-white">
@@ -715,7 +715,7 @@ export function SagiLanding() {
               <div className="text-xs font-bold text-[#9CA3AF] uppercase tracking-widest mb-4">Ежемесячно</div>
               <div className="flex items-end gap-1.5 mb-1">
                 <span className="text-5xl font-black text-[#111827]">$20</span>
-                <span className="text-[#9CA3AF] text-sm pb-2">/мес · за резидента</span>
+                <span className="text-[#9CA3AF] text-sm pb-2">/мес · за участника</span>
               </div>
               <div className="text-[#9CA3AF] text-sm mb-7">Оплата каждый месяц, без обязательств</div>
               <a href="mailto:info@sagi.kz" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 font-bold text-sm hover:bg-[#FAFFFE] transition" style={{ borderColor: GREEN, color: GREEN }}>
@@ -731,11 +731,11 @@ export function SagiLanding() {
               <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: GREEN }}>Ежегодно</div>
               <div className="flex items-end gap-1.5 mb-1">
                 <span className="text-5xl font-black text-[#111827]">$170</span>
-                <span className="text-[#9CA3AF] text-sm pb-2">/год · за резидента</span>
+                <span className="text-[#9CA3AF] text-sm pb-2">/год · за участника</span>
               </div>
               <div className="flex items-center gap-2 mb-7">
                 <span className="text-[#D1D5DB] text-sm line-through">$240/год</span>
-                <span className="text-sm font-bold text-emerald-600">Экономия $70 на резиденте</span>
+                <span className="text-sm font-bold text-emerald-600">Экономия $70 на участника</span>
               </div>
               <a href="mailto:info@sagi.kz" className="btn-green w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm shadow-md">
                 Получить годовой тариф <ChevronRight size={15} />
@@ -749,7 +749,7 @@ export function SagiLanding() {
           </div>
 
           <p className="text-center text-sm text-[#9CA3AF] mt-6">
-            Цена указана за одного активного резидента. Оплата единым счётом за всю базу.
+            Цена указана за одного активного участника программы. Оплата единым счётом за всю базу.
           </p>
         </div>
       </section>
@@ -772,9 +772,9 @@ export function SagiLanding() {
           <div className="card-border rounded-2xl bg-white p-8">
             <div className="grid sm:grid-cols-3 gap-6">
               {[
-                { icon: <Clock size={17} />, t: 'Предотвращение убытков', d: 'Жёсткий контроль сроков не допускает использования просроченного членства у партнёров.' },
-                { icon: <Zap size={17} />, t: 'Снижение операционных затрат', d: 'Каталог и база клиентов обновляются в пару кликов - без ручной работы.' },
-                { icon: <Users size={17} />, t: 'Рост удержания', d: 'Цифровой продукт повышает воспринимаемую ценность членства и снижает отток.' },
+                { icon: <Users size={17} />, t: 'Снижение текучести', d: 'Цифровой продукт повышает воспринимаемую ценность льготсотрудники и клиенты остаются дольше.' },
+                { icon: <Zap size={17} />, t: 'Снижение операционных затрат', d: 'Каталог и база участников обновляются в пару кликовбез ручной работы команды.' },
+                { icon: <BarChart3 size={17} />, t: 'Аналитика и прозрачность', d: 'Понятные данные о том, как используются льготыдля обоснованных решений HR и маркетинга.' },
               ].map(v => (
                 <div key={v.t} className="flex gap-4">
                   <div className="icon-green w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">{v.icon}</div>
@@ -805,13 +805,13 @@ export function SagiLanding() {
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/80 text-xs font-semibold mb-7">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#2ABB6F]" />
-                Платформа готова к внедрению
+                Платформа готова к запуску
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-white mb-5 leading-tight">
-                Sagi Community<br />Технологическое лицо гостеприимства AIFC Expat Centre
+                Sagi Community:<br />технологическая основа корпоративной лояльности
               </h2>
               <p className="text-white/60 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-                Современная платформа для цифровизации клуба лояльности. Полный контроль. Живое сообщество. Измеримый результат.
+                Современная платформа для цифровизации привилегий сотрудников и клиентов. Полный контроль. Живое сообщество. Измеримый результат.
               </p>
             </div>
           </div>
