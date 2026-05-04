@@ -163,10 +163,6 @@ const T = {
     anonDesc: 'Одна цифровая карта на всю организацию. Сотрудники предъявляют её у партнёров. Карту можно выдать по статусу или цвету — для разных уровней доступа к привилегиям.',
     anonFeatures: [
       'Одна карта на организацию',
-      'QR-код для сканирования у партнёров',
-      'Каталог корпоративных привилегий',
-      'Лента событий и новостей компании',
-      'Без сбора личных данных участников',
     ],
     anonNote: 'Идеально для пилота или небольших команд',
     anonCta: 'Уточнить цену',
@@ -322,10 +318,6 @@ const T = {
     anonDesc: 'One digital card for the entire organization. Employees show it at partner locations. Cards can be issued by status or color — for different levels of access to perks.',
     anonFeatures: [
       'One card for the organization',
-      'QR code for partner scanning',
-      'Corporate perks catalog',
-      'Company event and news feed',
-      'No personal member data collected',
     ],
     anonNote: 'Perfect for a pilot or small teams',
     anonCta: 'Get pricing',
