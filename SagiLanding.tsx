@@ -799,7 +799,6 @@ export function SagiLanding() {
             <div className="flex-1 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-6">
                 <span className="text-[42px] font-black tracking-tight text-[#111827]">sagi</span>
-                <span className="text-sm font-semibold text-[#2ABB6F] border border-[#B6EDD2] bg-[#EDFAF3] rounded-full px-3.5 py-1">Community</span>
               </div>
               <p className="text-[#6B7280] text-lg leading-relaxed max-w-md mx-auto lg:mx-0">{t.aboutDesc}</p>
             </div>
