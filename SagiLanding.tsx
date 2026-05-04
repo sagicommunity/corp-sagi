@@ -155,25 +155,39 @@ const T = {
     ],
     trustedBy: 'Нам доверяют',
     pricingBadge: 'Прозрачная тарификация',
-    pricingH2a: 'Простая цена,',
-    pricingH2b: 'полный функционал',
-    pricingSubtitle: 'Один тариф, все 12 функций. Выберите удобный период оплаты.',
-    monthlyLabel: 'Ежемесячно',
-    monthlyUnit: '/мес · за участника',
-    monthlyNote: 'Оплата каждый месяц, без обязательств',
-    monthlyCta: 'Начать внедрение',
-    annualPill: '-30% · Выгоднее',
-    annualLabel: 'Ежегодно',
-    annualUnit: '/год · за участника',
-    annualOld: '$240/год',
-    annualSave: 'Экономия $70 на участника',
-    annualCta: 'Получить годовой тариф',
+    pricingH2a: 'Два формата,',
+    pricingH2b: 'один продукт',
+    pricingSubtitle: 'Выберите подходящий формат — анонимная карта или персональная программа для каждого участника.',
+    anonBadge: 'Без личных данных',
+    anonTitle: 'Корпоративная карта',
+    anonDesc: 'Одна цифровая карта на всю организацию. Сотрудники предъявляют её у партнёров — без регистрации и хранения личных данных участников.',
+    anonFeatures: [
+      'Одна карта на организацию',
+      'QR-код для сканирования у партнёров',
+      'Каталог корпоративных привилегий',
+      'Лента событий и новостей компании',
+      'Без сбора личных данных участников',
+    ],
+    anonNote: 'Идеально для пилота или небольших команд',
+    anonCta: 'Уточнить цену',
+    volumeBadge: 'Персональная программа',
+    volumeTitle: 'Карта для каждого участника',
+    volumeDesc: 'Каждый сотрудник или клиент получает личную карту с QR-кодом и Apple Wallet. Полная аналитика использования.',
+    volumeHeader: ['Команда', 'За участника', 'В месяц'],
+    volumeTiers: [
+      { range: 'До 100', price: '$17', total: 'от $1 700', highlight: false },
+      { range: 'До 200', price: '$15', total: 'от $3 000', highlight: false },
+      { range: 'До 300', price: '$13', total: 'от $3 900', highlight: false },
+      { range: '300+', price: 'Договорная', total: '', highlight: true },
+    ],
+    volumeCta: 'Рассчитать стоимость',
+    includedLabel: 'Входит в оба тарифа',
     featureGroups: [
       { label: 'Для участника', color: 'bg-[#EDFAF3] text-[#1E9E5A]', items: ['Apple Wallet карта', 'Карта участника (QR ID)', 'Каталог корпоративных привилегий', 'Лента событий компании'] },
       { label: 'Для HR / Маркетинга', color: 'bg-[#EEF2FF] text-[#4338CA]', items: ['Аналитика использования', 'Управление контентом', 'Контроль сроков действия', 'Личный кабинет'] },
       { label: 'Сервис и поддержка', color: 'bg-[#FFF7ED] text-[#C2410C]', items: ['Техническая поддержка', 'Онбординг и обучение', 'Персональный менеджер', 'Доступ к платформе'] },
     ],
-    pricingNote: 'Цена указана за одного активного участника программы. Оплата единым счётом за всю базу.',
+    pricingNote: 'Оплата единым счётом за всю базу участников. Для команд 300+ — индивидуальное предложение.',
     roiBadge: 'Почему это выгодно',
     roiH2a: 'Что вы получаете',
     roiH2b: 'помимо продукта',
@@ -294,25 +308,39 @@ const T = {
     ],
     trustedBy: 'Trusted by',
     pricingBadge: 'Transparent Pricing',
-    pricingH2a: 'Simple pricing,',
-    pricingH2b: 'full features',
-    pricingSubtitle: 'One plan, all 12 features. Choose your billing period.',
-    monthlyLabel: 'Monthly',
-    monthlyUnit: '/mo · per member',
-    monthlyNote: 'Pay monthly, no commitments',
-    monthlyCta: 'Get started',
-    annualPill: '-30% · Best value',
-    annualLabel: 'Annual',
-    annualUnit: '/yr · per member',
-    annualOld: '$240/yr',
-    annualSave: 'Save $70 per member',
-    annualCta: 'Get annual plan',
+    pricingH2a: 'Two formats,',
+    pricingH2b: 'one product',
+    pricingSubtitle: 'Choose your format — an anonymous card or a personal program for each member.',
+    anonBadge: 'No personal data',
+    anonTitle: 'Corporate Card',
+    anonDesc: 'One digital card for the entire organization. Employees show it at partner locations — no registration or personal data stored.',
+    anonFeatures: [
+      'One card for the organization',
+      'QR code for partner scanning',
+      'Corporate perks catalog',
+      'Company event and news feed',
+      'No personal member data collected',
+    ],
+    anonNote: 'Perfect for a pilot or small teams',
+    anonCta: 'Get pricing',
+    volumeBadge: 'Personal Program',
+    volumeTitle: 'A card for each member',
+    volumeDesc: 'Each employee or client gets a personal card with QR code and Apple Wallet. Full usage analytics included.',
+    volumeHeader: ['Team size', 'Per member', 'Per month'],
+    volumeTiers: [
+      { range: 'Up to 100', price: '$17', total: 'from $1,700', highlight: false },
+      { range: 'Up to 200', price: '$15', total: 'from $3,000', highlight: false },
+      { range: 'Up to 300', price: '$13', total: 'from $3,900', highlight: false },
+      { range: '300+', price: 'Custom', total: '', highlight: true },
+    ],
+    volumeCta: 'Calculate cost',
+    includedLabel: 'Included in both plans',
     featureGroups: [
       { label: 'For Member', color: 'bg-[#EDFAF3] text-[#1E9E5A]', items: ['Apple Wallet card', 'Member card (QR ID)', 'Corporate perks catalog', 'Company event feed'] },
       { label: 'For HR / Marketing', color: 'bg-[#EEF2FF] text-[#4338CA]', items: ['Usage analytics', 'Content management', 'Expiry control', 'Dashboard'] },
       { label: 'Service & Support', color: 'bg-[#FFF7ED] text-[#C2410C]', items: ['Technical support', 'Onboarding & training', 'Dedicated manager', 'Platform access'] },
     ],
-    pricingNote: 'Price is per one active program member. Billed as a single invoice for your entire base.',
+    pricingNote: 'Billed as a single invoice for your entire member base. Teams of 300+ get a custom quote.',
     roiBadge: 'Why it\'s worth it',
     roiH2a: 'What you get',
     roiH2b: 'beyond the product',
@@ -373,7 +401,7 @@ function PainBlock({ t }: { t: Translations }) {
             {t.painH2a}<br />
             <span className="green-text">{t.painH2b}</span>
           </h2>
-          <p className="text-[#6B7280] text-lg max-w-xl mx-auto">{t.painSubtitle}</p>
+          <p className="text-[#6B7280] text-lg">{t.painSubtitle}</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -804,7 +832,7 @@ export function SagiLanding() {
           PRICING
       ══════════════════════════ */}
       <section id="Тарифы" className="py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <span className="badge-green inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold mb-4">
               {t.pricingBadge}
@@ -813,37 +841,65 @@ export function SagiLanding() {
             <p className="text-[#6B7280] text-lg max-w-xl mx-auto">{t.pricingSubtitle}</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="card-border card-lift rounded-2xl p-8 bg-white">
-              <div className="text-xs font-bold text-[#9CA3AF] uppercase tracking-widest mb-4">{t.monthlyLabel}</div>
-              <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-5xl font-black text-[#111827]">$20</span>
-                <span className="text-[#9CA3AF] text-sm pb-2">{t.monthlyUnit}</span>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+            {/* ── Анонимная карта ── */}
+            <div className="card-border card-lift rounded-2xl p-8 bg-white flex flex-col">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-5 w-fit" style={{ background: '#EEF2FF', color: '#4338CA', border: '1px solid #C7D2FE' }}>
+                {t.anonBadge}
               </div>
-              <div className="text-[#9CA3AF] text-sm mb-7">{t.monthlyNote}</div>
+              <h3 className="text-xl font-black text-[#111827] mb-3">{t.anonTitle}</h3>
+              <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.anonDesc}</p>
+              <ul className="space-y-2.5 mb-6 flex-1">
+                {t.anonFeatures.map(f => (
+                  <li key={f} className="flex items-center gap-2.5 text-sm text-[#374151]">
+                    <CheckCircle size={15} style={{ color: GREEN, flexShrink: 0 }} />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-[#9CA3AF] italic mb-6">{t.anonNote}</p>
               <a href="mailto:info@sagi.kz" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 font-bold text-sm hover:bg-[#FAFFFE] transition" style={{ borderColor: GREEN, color: GREEN }}>
-                {t.monthlyCta} <ChevronRight size={15} />
+                {t.anonCta} <ChevronRight size={15} />
               </a>
             </div>
 
-            <div className="price-card-featured card-lift rounded-2xl p-8 bg-white relative">
-              <div className="absolute top-5 right-5 annual-pill text-xs font-bold px-3 py-1.5 rounded-full">{t.annualPill}</div>
-              <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: GREEN }}>{t.annualLabel}</div>
-              <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-5xl font-black text-[#111827]">$170</span>
-                <span className="text-[#9CA3AF] text-sm pb-2">{t.annualUnit}</span>
+            {/* ── Персональная программа ── */}
+            <div className="price-card-featured card-lift rounded-2xl p-8 bg-white flex flex-col">
+              <div className="badge-green inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-5 w-fit">
+                {t.volumeBadge}
               </div>
-              <div className="flex items-center gap-2 mb-7">
-                <span className="text-[#D1D5DB] text-sm line-through">{t.annualOld}</span>
-                <span className="text-sm font-bold text-emerald-600">{t.annualSave}</span>
+              <h3 className="text-xl font-black text-[#111827] mb-3">{t.volumeTitle}</h3>
+              <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.volumeDesc}</p>
+
+              {/* Volume table */}
+              <div className="rounded-xl overflow-hidden border border-[#F0F0F0] mb-6 flex-1">
+                <div className="grid grid-cols-3 bg-[#F9F9F9] px-4 py-2.5 border-b border-[#F0F0F0]">
+                  {t.volumeHeader.map(h => (
+                    <div key={h} className="text-[11px] font-bold uppercase tracking-wider text-[#9CA3AF]">{h}</div>
+                  ))}
+                </div>
+                {t.volumeTiers.map((tier, i) => (
+                  <div
+                    key={i}
+                    className={`grid grid-cols-3 px-4 py-3 border-b border-[#F0F0F0] last:border-0 ${tier.highlight ? 'bg-[#F2FDF7]' : 'bg-white'}`}
+                  >
+                    <div className={`text-sm font-bold ${tier.highlight ? 'green-text' : 'text-[#111827]'}`}>{tier.range}</div>
+                    <div className={`text-sm font-bold ${tier.highlight ? 'green-text' : 'text-[#111827]'}`}>{tier.price}</div>
+                    <div className="text-sm text-[#6B7280]">{tier.total || <span className="text-xs italic text-[#9CA3AF]">—</span>}</div>
+                  </div>
+                ))}
               </div>
+
               <a href="mailto:info@sagi.kz" className="btn-green w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm shadow-md">
-                {t.annualCta} <ChevronRight size={15} />
+                {t.volumeCta} <ChevronRight size={15} />
               </a>
             </div>
           </div>
 
+          {/* Входит в оба тарифа */}
           <div className="card-border rounded-2xl p-8 bg-white">
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mb-8">{t.includedLabel}</p>
             <FeatureGroupList t={t} />
           </div>
 
