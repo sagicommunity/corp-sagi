@@ -890,7 +890,7 @@ export function SagiLanding() {
                 ))}
               </div>
 
-              <p className="text-xs text-[#9CA3AF] italic mb-6">{t.anonNote}</p>
+
               <a href="mailto:info@sagi.kz" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 font-bold text-sm hover:bg-[#FAFFFE] transition" style={{ borderColor: GREEN, color: GREEN }}>
                 {t.anonCta} <ChevronRight size={15} />
               </a>
