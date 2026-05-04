@@ -160,7 +160,7 @@ const T = {
     pricingSubtitle: 'Выберите подходящий формат — анонимная карта или персональная программа для каждого участника.',
     anonBadge: 'Без личных данных',
     anonTitle: 'Корпоративная карта',
-    anonDesc: 'Одна цифровая карта на всю организацию. Сотрудники предъявляют её у партнёров. Карту можно выдать по статусу или цвету — для разных уровней доступа к привилегиям.',
+    anonDesc: '',
     anonFeatures: [
       'Одна карта на организацию',
     ],
@@ -315,7 +315,7 @@ const T = {
     pricingSubtitle: 'Choose your format — an anonymous card or a personal program for each member.',
     anonBadge: 'No personal data',
     anonTitle: 'Corporate Card',
-    anonDesc: 'One digital card for the entire organization. Employees show it at partner locations. Cards can be issued by status or color — for different levels of access to perks.',
+    anonDesc: '',
     anonFeatures: [
       'One card for the organization',
     ],
@@ -852,8 +852,7 @@ export function SagiLanding() {
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-5 w-fit" style={{ background: '#EEF2FF', color: '#4338CA', border: '1px solid #C7D2FE' }}>
                 {t.anonBadge}
               </div>
-              <h3 className="text-xl font-black text-[#111827] mb-3">{t.anonTitle}</h3>
-              <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.anonDesc}</p>
+              <h3 className="text-xl font-black text-[#111827] mb-6">{t.anonTitle}</h3>
               <ul className="space-y-2.5 mb-6">
                 {t.anonFeatures.map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#374151]">
