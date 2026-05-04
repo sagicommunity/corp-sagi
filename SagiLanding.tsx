@@ -160,7 +160,7 @@ const T = {
     pricingSubtitle: 'Выберите подходящий формат — анонимная карта или персональная программа для каждого участника.',
     anonBadge: 'Без личных данных',
     anonTitle: 'Корпоративная карта',
-    anonDesc: 'Одна цифровая карта на всю организацию. Сотрудники предъявляют её у партнёров — без регистрации и хранения личных данных участников.',
+    anonDesc: 'Одна цифровая карта на всю организацию. Сотрудники предъявляют её у партнёров. Карту можно выдать по статусу или цвету — для разных уровней доступа к привилегиям.',
     anonFeatures: [
       'Одна карта на организацию',
       'QR-код для сканирования у партнёров',
@@ -319,7 +319,7 @@ const T = {
     pricingSubtitle: 'Choose your format — an anonymous card or a personal program for each member.',
     anonBadge: 'No personal data',
     anonTitle: 'Corporate Card',
-    anonDesc: 'One digital card for the entire organization. Employees show it at partner locations — no registration or personal data stored.',
+    anonDesc: 'One digital card for the entire organization. Employees show it at partner locations. Cards can be issued by status or color — for different levels of access to perks.',
     anonFeatures: [
       'One card for the organization',
       'QR code for partner scanning',
