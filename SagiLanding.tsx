@@ -181,6 +181,12 @@ const T = {
       { range: '300+', price: 'Договорная', total: '', highlight: true },
     ],
     volumeCta: 'Рассчитать стоимость',
+    volumeBillingLabel: 'Период оплаты',
+    volumeMonthly: 'Ежемесячно',
+    volumeMonthlyNote: 'Оплата каждый месяц',
+    volumeAnnual: 'Ежегодно',
+    volumeAnnualNote: 'Скидка 30% · от $170/год за участника',
+    volumeAnnualPill: '-30%',
     includedLabel: 'Входит в оба тарифа',
     featureGroups: [
       { label: 'Для участника', color: 'bg-[#EDFAF3] text-[#1E9E5A]', items: ['Apple Wallet карта', 'Карта участника (QR ID)', 'Каталог корпоративных привилегий', 'Лента событий компании'] },
@@ -334,6 +340,12 @@ const T = {
       { range: '300+', price: 'Custom', total: '', highlight: true },
     ],
     volumeCta: 'Calculate cost',
+    volumeBillingLabel: 'Billing period',
+    volumeMonthly: 'Monthly',
+    volumeMonthlyNote: 'Pay each month',
+    volumeAnnual: 'Annual',
+    volumeAnnualNote: '30% off · from $170/yr per member',
+    volumeAnnualPill: '-30%',
     includedLabel: 'Included in both plans',
     featureGroups: [
       { label: 'For Member', color: 'bg-[#EDFAF3] text-[#1E9E5A]', items: ['Apple Wallet card', 'Member card (QR ID)', 'Corporate perks catalog', 'Company event feed'] },
@@ -889,6 +901,19 @@ export function SagiLanding() {
                     <div className="text-sm text-[#6B7280]">{tier.total || <span className="text-xs italic text-[#9CA3AF]">—</span>}</div>
                   </div>
                 ))}
+              </div>
+
+              {/* Billing period */}
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                <div className="rounded-xl border border-[#F0F0F0] p-3.5 bg-[#FAFAFA]">
+                  <div className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-1">{t.volumeMonthly}</div>
+                  <div className="text-sm text-[#374151]">{t.volumeMonthlyNote}</div>
+                </div>
+                <div className="rounded-xl p-3.5 relative overflow-hidden" style={{ background: '#EDFAF3', border: '1px solid #B6EDD2' }}>
+                  <span className="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full annual-pill">{t.volumeAnnualPill}</span>
+                  <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: GREEN }}>{t.volumeAnnual}</div>
+                  <div className="text-sm font-semibold" style={{ color: GREEN_DARK }}>{t.volumeAnnualNote}</div>
+                </div>
               </div>
 
               <a href="mailto:info@sagi.kz" className="btn-green w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold text-sm shadow-md">
