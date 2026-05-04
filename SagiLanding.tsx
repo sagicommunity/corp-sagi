@@ -862,7 +862,7 @@ export function SagiLanding() {
               </div>
               <h3 className="text-xl font-black text-[#111827] mb-3">{t.anonTitle}</h3>
               <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.anonDesc}</p>
-              <ul className="space-y-2.5 mb-6 flex-1">
+              <ul className="space-y-2.5 mb-6">
                 {t.anonFeatures.map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#374151]">
                     <CheckCircle size={15} style={{ color: GREEN, flexShrink: 0 }} />
@@ -870,19 +870,6 @@ export function SagiLanding() {
                   </li>
                 ))}
               </ul>
-              <p className="text-xs text-[#9CA3AF] italic mb-6">{t.anonNote}</p>
-              <a href="mailto:info@sagi.kz" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 font-bold text-sm hover:bg-[#FAFFFE] transition" style={{ borderColor: GREEN, color: GREEN }}>
-                {t.anonCta} <ChevronRight size={15} />
-              </a>
-            </div>
-
-            {/* ── Персональная программа ── */}
-            <div className="price-card-featured card-lift rounded-2xl p-8 bg-white flex flex-col">
-              <div className="badge-green inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-5 w-fit">
-                {t.volumeBadge}
-              </div>
-              <h3 className="text-xl font-black text-[#111827] mb-3">{t.volumeTitle}</h3>
-              <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.volumeDesc}</p>
 
               {/* Volume table */}
               <div className="rounded-xl overflow-hidden border border-[#F0F0F0] mb-6 flex-1">
@@ -902,6 +889,20 @@ export function SagiLanding() {
                   </div>
                 ))}
               </div>
+
+              <p className="text-xs text-[#9CA3AF] italic mb-6">{t.anonNote}</p>
+              <a href="mailto:info@sagi.kz" className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 font-bold text-sm hover:bg-[#FAFFFE] transition" style={{ borderColor: GREEN, color: GREEN }}>
+                {t.anonCta} <ChevronRight size={15} />
+              </a>
+            </div>
+
+            {/* ── Персональная программа ── */}
+            <div className="price-card-featured card-lift rounded-2xl p-8 bg-white flex flex-col">
+              <div className="badge-green inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold mb-5 w-fit">
+                {t.volumeBadge}
+              </div>
+              <h3 className="text-xl font-black text-[#111827] mb-3">{t.volumeTitle}</h3>
+              <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.volumeDesc}</p>
 
               {/* Billing period */}
               <div className="grid grid-cols-2 gap-3 mb-6">
