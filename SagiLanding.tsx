@@ -183,9 +183,9 @@ const T = {
     volumeCta: 'Рассчитать стоимость',
     volumeBillingLabel: 'Период оплаты',
     volumeMonthly: 'Ежемесячно',
-    volumeMonthlyNote: 'от $20 за участника',
+    volumeMonthlyNote: 'в месяц · за участника',
     volumeAnnual: 'Ежегодно',
-    volumeAnnualNote: 'Скидка 30% · от $170/год за участника',
+    volumeAnnualNote: 'в год · за участника',
     volumeAnnualPill: '-30%',
     includedLabel: 'Входит в оба тарифа',
     featureGroups: [
@@ -342,9 +342,9 @@ const T = {
     volumeCta: 'Calculate cost',
     volumeBillingLabel: 'Billing period',
     volumeMonthly: 'Monthly',
-    volumeMonthlyNote: 'from $20 per member',
+    volumeMonthlyNote: 'per month · per member',
     volumeAnnual: 'Annual',
-    volumeAnnualNote: '30% off · from $170/yr per member',
+    volumeAnnualNote: 'per year · per member',
     volumeAnnualPill: '-30%',
     includedLabel: 'Included in both plans',
     featureGroups: [
@@ -907,12 +907,14 @@ export function SagiLanding() {
               <div className="grid grid-cols-2 gap-3 mb-6">
                 <div className="rounded-xl border border-[#F0F0F0] p-3.5 bg-[#FAFAFA]">
                   <div className="text-xs font-bold text-[#9CA3AF] uppercase tracking-wider mb-1">{t.volumeMonthly}</div>
-                  <div className="text-sm text-[#374151]">{t.volumeMonthlyNote}</div>
+                  <div className="text-2xl font-black text-[#111827]">$20</div>
+                  <div className="text-xs text-[#9CA3AF] mt-0.5">{t.volumeMonthlyNote}</div>
                 </div>
                 <div className="rounded-xl p-3.5 relative overflow-hidden" style={{ background: '#EDFAF3', border: '1px solid #B6EDD2' }}>
                   <span className="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full annual-pill">{t.volumeAnnualPill}</span>
                   <div className="text-xs font-bold uppercase tracking-wider mb-1" style={{ color: GREEN }}>{t.volumeAnnual}</div>
-                  <div className="text-sm font-semibold" style={{ color: GREEN_DARK }}>{t.volumeAnnualNote}</div>
+                  <div className="text-2xl font-black" style={{ color: GREEN_DARK }}>$170</div>
+                  <div className="text-xs mt-0.5" style={{ color: GREEN_DARK }}>{t.volumeAnnualNote}</div>
                 </div>
               </div>
 
