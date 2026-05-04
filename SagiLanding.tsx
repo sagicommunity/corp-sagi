@@ -313,7 +313,7 @@ const T = {
     pricingH2a: 'Two formats,',
     pricingH2b: 'one product',
     pricingSubtitle: 'Choose your format — an anonymous card or a personal program for each member.',
-    anonBadge: 'No personal data',
+    anonBadge: 'Private',
     anonTitle: 'Corporate Card',
     anonDesc: '',
     anonFeatures: [
