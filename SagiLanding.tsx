@@ -312,7 +312,7 @@ const T = {
     pricingBadge: 'Transparent Pricing',
     pricingH2a: 'Two formats,',
     pricingH2b: 'one product',
-    pricingSubtitle: 'Choose your format — an anonymous card or a personal program for each member.',
+    pricingSubtitle: 'Choose your format — a private card or a personal program for each member.',
     anonBadge: 'Private',
     anonTitle: 'Corporate Card',
     anonDesc: '',
